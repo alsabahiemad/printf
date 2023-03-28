@@ -38,7 +38,9 @@ else if (width)
 while (fmt[*ind] != ' ' && fmt[*ind] != '%')
 	--(*ind);
 if (fmt[*ind] == ' ')
+{
 	--(*ind);
+}
 	return (1);
 }
 	unknow_len += write(1, &fmt[*ind], 1);
